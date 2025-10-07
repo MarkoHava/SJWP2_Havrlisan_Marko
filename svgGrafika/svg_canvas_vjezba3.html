@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="800" height="600" style="border: 1px solid black">
+        <rect x="450" y="200" width="200" height="50" style="transform: skew(-50deg);"/>
+        <rect x="670" y="200" width="200" height="50" style="transform: skew(-50deg);"/>
+        <rect x="450" y="225" width="200" height="25" />
+        <rect x="268" y="200" width="200" height="25" style="transform: skew(39deg)"/>
+        <rect x="440" y="212" width="50" height="25" fill="white"/>
+        <rect x="550" y="175" width="50" height="25"/>
+
+        <polygon points="25,260 50,310 670,295 675,260"/>
+        <polygon points="49,309 150,380 620,380 670,294"/>
+        
+        <rect x="75" y="280" width="30" height="20" fill="white"/>
+        <rect x="150" y="280" width="30" height="20" fill="white"/>
+        <rect x="225" y="280" width="30" height="20" fill="white"/>
+        <rect x="300" y="280" width="30" height="20" fill="white"/>
+        <rect x="375" y="280" width="30" height="20" fill="white"/>
+        <rect x="450" y="280" width="30" height="20" fill="white"/>
+        <rect x="525" y="280" width="30" height="20" fill="white"/>
+        <rect x="600" y="280" width="30" height="20" fill="white"/>
+
+        <polygon points="460,190 500,140 535,140 535,190"/>
+        <polygon points="500,140 520,0 535,0 535,140"/>
+    </svg>
+    <hr>
+    <canvas id="myCanvas" width="800" height="600px"
+     style="border: 2px solid black;">
+        <script>
+            let c = document.getElementById("hrvatska");
+            let ctx = c.getContext("2d");
+            
+            ctx.beginPath();
+            ctx.moveTo(25, 260);
+            ctx.lineTo(50, 310);
+            ctx.closePath();
+            ctx.fillStyle = "black"
+            ctx.fill();
+        </script>
+    </canvas>
+</body>
+</html>

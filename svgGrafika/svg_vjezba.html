@@ -3,14 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, td, th{
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+        }
+    </style>
     <title>SVG vjezba</title>
 </head>
 <body>
     <svg width="600" height="600" style="border: 1px solid black">
         <rect width="100" height="100" fill="blue"
          x="50" y="50" rx="15" ry="15"/>
-         <circle r="80" fill="red" cx="150" cy="200"/>
+         <circle r="80" fill="red" />
          <polygon points="300,10 350,190 250,190" style="fill:pink;stroke:purple;stroke-width:3" />
     </svg>
+    <br>
+    <h3>Tablice</h3>
+    <table>
+        <tr>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Razred</th>
+        </tr>
+        <tr>
+            <td>Petar</td>
+            <td>Simić</td>
+            <td>3.E</td>
+        </tr>
+        <tr>
+            <td>Ivo</td>
+            <td>Horvat</td>
+            <td>4.A</td>
+        </tr>
+    </table>
+    <h3>Forme u HTMLu</h3>
+    <form action="#" method="get">
+        <label for="ime">Ime: </label>
+        <input type="text" id="ime" required><br>
+        <label for="prezime">Prezime: </label>
+        <input type="text" id="prezime"><br>
+
+        <input type="submit" value="Pošalji">
+    </form>
 </body>
 </html>
