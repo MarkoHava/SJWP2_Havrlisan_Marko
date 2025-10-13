@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        table, td, th{
+            border: 1px solid black;
+            text-align: left;
+            border-collapse: collapse;
+            width: 500px;
+        }
+        body{
+            background-color: #C2F8F7;
+        }
+        h1{
+            font-weight:bold;
+            font-size: 2.5em;
+        }
+        p{
+            margin-left: 8px;
+            margin-right: 8px; 
+            color: rgb(96, 96, 96);
+        }
+        nav{
+            background-color: aliceblue;
+            
+        }
+    </style>
+    <title>Skriptni jezici</title>
+</head>
+<body>
+    <nav>
+        <a href="">Početna</a>
+        <a href="">O nama</a>
+        <a href="">Kontakt</a>
+    </nav>
+    <h1>HTML, CSS, Canvas i SVG</h1>
+    <p>
+        <i>Canvas</i> je HTML5 element koji, pomoću JavaScript-a, omogućava dinamičko iscrtavanje
+različitih oblika, dodavanje slika, kreiranje animacija na web stranici i sl.
+    </p>
+    <p>
+        Na platnu (canvas-u) to ne radimo korištenjem novog jezika (kao što je to slučaj kod SVG) ili
+korištenjem Flasha. Najčešće uporabe platna su:
+    </p>
+    <ul>
+        <li>crtanje grafova</li>
+        <li>animacija, igre i</li>
+        <li>kompozicija slike</li>
+    </ul>
+    <p>
+        <strong>SVG</strong> <i>(Scalable Vector Graphics)</i> grafika ne gubi kvalitetu prilikom zumiranja ili resize-a.</p>
+<p>Svi crteži mogu biti interaktivni i dinamički. Svaki element i atribut SVG datoteke može biti
+animiran. Animacije mogu biti definirane i pokrenute interaktivno ili pomoću skripti.</p>
+<p>SVG integrira druge W3C standarde kao što su DOM, XSL …</p>
+    </p>
+
+    <table>
+        <tr>
+            <th>SVG</th>
+            <th>HTML Canvas</th>
+        </tr>
+        <tr>
+            <td>SVG ima bolju skalabilnost, tako da može imati bolje slike sa velikom kvalitetom na bolo kojoj rezoluciji</th>
+            <td>Canvas ima lošu skalabilnost. Noje prikladan za rad s velikim rezolucijama</th>
+        </tr>
+        <tr>
+            <td>SVG daje bolje performanse sa manjim brojem objekata ili većom površinom</th>
+            <td>Canvas daje bolje performanse za rad sa manjim površinama ili većim brojem objekata</th>
+        </tr>
+        <tr>
+            <td>SVG se može modificirati uz pomoć skripte i CSS-a</th>
+            <td>Canvas se može modificirati uz pomoć skripte</th>
+        </tr>
+        <tr>
+            <td>SVG je baziran na vektorima i sastav- ljen je od oblika</th>
+            <td>Canvas je baziran na pixelima</th>
+        </tr>
+    </table>
+    <img src="./zarulje.png" alt="" style="width: 480px; height: 220px;">
+    
+    <h2>Primjer SVG-a i Canvasa</h2>
+    <canvas id="myCanvas" width="400" height="400"
+     style="background-color: #a4f553;" >
+        <script>
+            let c = document.getElementById("myCanvas");
+            let ctx = c.getContext("2d");
+            
+            ctx.beginPath();
+            ctx.rect(125,100,150,200);
+            ctx.fillStyle = "#faf2c3";
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.rect(125,75,150,35);
+            ctx.fillStyle = "black";
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.arc(165, 160, 25, 0, 2*Math.PI);
+            ctx.fillStyle="white";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(165, 160, 15, 0, 2*Math.PI);
+            ctx.fillStyle="green";
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(235, 160, 25, 0, 2*Math.PI);
+            ctx.fillStyle="white";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(235, 160, 15, 0, 2*Math.PI);
+            ctx.fillStyle="green";
+            ctx.fill()
+
+            ctx.beginPath();
+            ctx.moveTo(200, 200);
+            ctx.lineTo(180, 210);
+            ctx.lineTo(220, 210);
+            ctx.lineTo(200, 200); 
+            ctx.lineWidth = 5;
+            ctx.fillStyle = "#aba99f";
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(200, 230, 55, 0, Math.PI);
+            ctx.fillStyle="pink";
+            ctx.fill();
+        </script>
+    </canvas>
+
+    <svg width="400" height="400" style="background-color: #a4f553;">
+        <rect x="125" y="100" width="150" height="200" fill="#faf2c3"/>
+        <rect x="125" y="75" width="150" height="35"/>
+        <polygon points="200,200 180,210 220,210" fill="#aba99f"/>
+        <circle fill="white" r=25 cx="165" cy="160"/>
+        <circle fill="white" r=25 cx="235" cy="160"/>
+        <circle r=15 cx="165" cy="160" fill="green"/>
+        <circle r=15 cx="235" cy="160" fill="green"/>
+    </svg>
+</body>
+</html>
