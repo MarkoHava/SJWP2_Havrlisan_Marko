@@ -1,0 +1,20 @@
+document.getElementById("title").innerHTML = "Pozdrav";
+document.getElementById("second").style.color = "blue";
+//document.querySelector("input").getAttribute("checked");
+document.getElementsByClassName("btn")[0].classList.add("active");
+document.querySelector("ul li a").setAttribute("href", "https://youtube.com");
+//document.querySelectorAll("ul li")[0].innerHTML = "drugi tekst";
+document.querySelectorAll("ul li")[1].classList.remove("list");
+document.querySelectorAll("a")[1].setAttribute("href", "https://yahoo.com");
+document.querySelector("ol li a").getAttribute("href");
+document.querySelectorAll("a")[0].setAttribute("title","Web stranica");
+document.querySelectorAll(".list2")[1].classList.remove("list2");
+document.querySelectorAll("#list2 li")[2];
+document.getElementsByTagName("h2")[0].style.backgroundColor="yellow";
+//document.querySelector("ol#list2").innerHTML = "";
+document.querySelector("button.btn").textContent = "Kliknuto!"
+document.querySelector("a").style.color="green";
+document.getElementsByClassName("list")[0].textContent.fontsize=24;
+document.querySelector("#list2 li").innerHTML="Novi tekst";
+document.querySelector("input").setAttribute("checked", true);
+document.querySelectorAll("ul li")[1].style.backgroundColor="blue";
