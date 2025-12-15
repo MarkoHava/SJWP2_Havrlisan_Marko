@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektrotehnički Alati</title>
+</head>
+<body>
+    <h1>Elektrotehnički Alati</h1>
+
+    <h2>Ohmov Zakon</h2>
+    <table>
+        <tr>
+            <th>
+                <form>
+                    <label for="r">Otpor: </label>
+                    <input type="number" id="r" >
+                    <label for="r">Ω</label>
+                    <br>
+                    <label for="v">Napon: </label>
+                    <input type="number" id="v">
+                    <label for="v">V</label>
+                    <br>
+                    <button type="button" onclick="OhmovZakon()">Izračunaj struju</button>
+                </form>
+                <p>Struja:</p>
+                <textarea disabled="true" id="taOhmovZakon">I = 0A</textarea>
+            </th>
+            <th>
+                <img src="assets/Resistor-Circuit-schematic.png" alt="Schema spoja otpornika" style="height: 300px;">
+            </th>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Djelilo Napona</h2>
+    <table>
+        <tr>
+            <th>
+                <form>
+                    <label for="r1">Otpor 1: </label>
+                    <input type="number" id="r1" >
+                    <label for="r">Ω</label>
+                    <br>
+                    <label for="r2">Otpor 2: </label>
+                    <input type="number" id="r2" >
+                    <label for="r">Ω</label>
+                    <br>
+                    <label for="vul">Ulazni napon: </label>
+                    <input type="number" id="vul">
+                    <label for="vul">V</label>
+                    <br>
+                    <button type="button" onclick="DjeliloNapona()">Izračunaj izlazni napon</button>
+                </form>
+                <p>Izlazni napon:</p>
+                <textarea disabled="true" id="taDjelilo">Uiz = 0V</textarea>
+            </th>
+            <th>
+                <img src="assets/voltage-divider-main-circuit.png" alt="Schema spoja otpornika" style="height: 300px;">
+            </th>
+        </tr>
+    </table>
+    <hr>
+
+<script src="index.js"></script>
+</body>
+</html>
