@@ -44,3 +44,39 @@ function InduktivniOtpor(){
     let formula = Number(w) * Number(l);
     ta.innerHTML = "Xl = " + formula + "Ω";
 }
+function KapacitivniOtpor(){
+    let w = document.getElementById("kow").value;
+    let c = document.getElementById("c").value;
+    let ta = document.getElementById("taKapacitivniOtpor");
+    let formula = 1/(Number(w) * Number(c));
+    ta.innerHTML = "Xc = " + formula + "μF";
+}
+function ParalelnoSpajanjeKondenzatora(){
+    let psok1 = document.getElementById("ssor1").value;
+    let psok2 = document.getElementById("ssor2").value;
+    let ta = document.getElementById("taParalelnoSpajanjeKondenzatora");
+    let formula = Number(psok1) + Number(psok2);
+    ta.innerHTML = "Cuk = " + formula + "µF";
+}
+function SerijskoSpajanjeKondenzatora(){
+    let ssok1 = document.getElementById("psor1").value;
+    let ssok2 = document.getElementById("psor2").value;
+    let ta = document.getElementById("taSerijskoSpajanjeKondenzatora");
+    let formula = (Number(ssok1) * Number(ssok2)) / (Number(ssok1) + Number(ssok2));
+    ta.innerHTML = "Cuk = " + formula + "µF";
+}
+
+function SerijskoSpajanjeZavojnice(){
+    let ssz1 = document.getElementById("ssz1").value;
+    let ssz2 = document.getElementById("ssz2").value;
+    let ta = document.getElementById("taSerijskoSpajanjeZavojnice");
+    let formula = Number(ssz1) + Number(ssz2);
+    ta.innerHTML = "Luk = " + formula + "H";
+}
+function ParalelnoSpajanjeZavojnice(){
+    let psz1 = document.getElementById("psz1").value;
+    let psz2 = document.getElementById("psz2").value;
+    let ta = document.getElementById("taParalelnoSpajanjeZavojnice");
+    let formula = (Number(psz1) * Number(psz2)) / (Number(psz1) + Number(psz2));
+    ta.innerHTML = "Ruk = " + formula + "Ω";
+}

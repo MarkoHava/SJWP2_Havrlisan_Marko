@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elektrotehnički Alati</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h1>Elektrotehnički Alati</h1>
@@ -88,6 +89,56 @@
     </table>
     <hr>
 
+        <h2>Serijsko Spajanje Zavojnice</h2>
+    <table>
+        <tr>
+            <th>
+                <form>
+                    <label for="ssz1">Zavojnica 1: </label>
+                    <input type="number" id="ssz1" >
+                    <label for="ssz1">H</label>
+                    <br>
+                    <label for="ssz2">Zavojnica 2: </label>
+                    <input type="number" id="ssz2" >
+                    <label for="ssz2">H</label>
+                    <br>
+                    <button type="button" onclick="SerijskoSpajanjeZavojnice()">Izračunaj ukupni Induktivitet</button>
+                </form>
+                <p>Ukupni induktivitet:</p>
+                <textarea disabled="true" id="taSerijskoSpajanjeZavojnice">Luk = 0H</textarea>
+            </th>
+            <th>
+                <img src="assets/ssz.png" alt="Schema spoja otpornika" style="height: 200px;">
+            </th>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Serijsko Spajanje Kondenzatora</h2>
+    <table>
+        <tr>
+            <th>
+                <form>
+                    <label for="ssok1">Kondenzator 1: </label>
+                    <input type="number" id="ssok1" >
+                    <label for="ssok1">µF</label>
+                    <br>
+                    <label for="ssor2">Kondenzator 2: </label>
+                    <input type="number" id="ssor2" >
+                    <label for="ssor2">µF</label>
+                    <br>
+                    <button type="button" onclick="SerijskoSpajanjeKondenzatora()">Izračunaj ukupni kapacitet</button>
+                </form>
+                <p>Ukupni kapacitet:</p>
+                <textarea disabled="true" id="taSerijskoSpajanjeKondenzatora">Cuk = 0µF</textarea>
+            </th>
+            <th>
+                <img src="assets/ssk.jpg" alt="Schema spoja otpornika" style="height: 300px;">
+            </th>
+        </tr>
+    </table>
+    <hr>
+
     <h2>Paralelno Spajanje Otpornika</h2>
     <table>
         <tr>
@@ -108,6 +159,57 @@
             </th>
             <th>
                 <img src="assets/pso.jpg" alt="Schema spoja otpornika" style="height: 300px;">
+            </th>
+        </tr>
+    </table>
+    <hr>
+
+            <h2>Paralelno Spajanje Zavojnice</h2>
+    <table>
+        <tr>
+            <th>
+                <form>
+                    <label for="psz1">Zavojnica 1: </label>
+                    <input type="number" id="psz1" >
+                    <label for="psz1">H</label>
+                    <br>
+                    <label for="psz2">Zavojnica 2: </label>
+                    <input type="number" id="psz2" >
+                    <label for="psz2">H</label>
+                    <br>
+                    <button type="button" onclick="ParalelnoSpajanjeZavojnice()">Izračunaj ukupni induktivitet</button>
+                </form>
+                <p>Ukupni induktivitet:</p>
+                <textarea disabled="true" id="taParalelnoSpajanjeZavojnice">Luk = 0H</textarea>
+            </th>
+            <th>
+                <img src="assets/psz.jpg" alt="Schema spoja otpornika" style="height: 300px;">
+            </th>
+        </tr>
+    </table>
+    <hr>
+
+
+    <h2>Paralelno Spajanje Kondenzatora</h2>
+    <table>
+        <tr>
+            <th>
+                <form>
+                    <label for="psok1">Kondenzator 1: </label>
+                    <input type="number" id="psok1" >
+                    <label for="psok1">µF</label>
+                    <br>
+                    <label for="psok2">Kondenzator 2: </label>
+                    <input type="number" id="psok2" >
+                    <label for="psok2">µF</label>
+                    <br>
+                    <button type="button" onclick="ParalelnoSpajanjeKondenzatora()">Izračunaj ukupni kapacitet</button>
+                </form>
+                <p>Ukupni kapacitet:</p>
+                <textarea disabled="true" id="taParalelnoSpajanjeKondenzatora">Cuk = 0µF</textarea>
+            </th>
+            <th>
+                <img src="assets/psk.jpg" alt="Schema spoja otpornika" style="height: 300px;">
             </th>
         </tr>
     </table>
@@ -164,6 +266,31 @@
             </th>
         </tr>
     </table>
+<hr>
+        <h2>Računanje Kapacitivnog Otpora</h2>
+    <table>
+        <tr>
+            <th>
+                <form>
+                    <label for="kow">Rezonantna Frekvencija: </label>
+                    <input type="number" id="kow">
+                    <label for="kow">Hz</label>
+                    <br>
+                    <label for="C">Kapacitet: </label>
+                    <input type="number" id="C">
+                    <label for="C">μF</label>
+                    <br>
+                    <button type="button" onclick="KapacitivniOtpor()">Izračunaj Kapacitivni Otpor</button>
+                </form>
+                <p>Kapacitivni Otpor:</p>
+                <textarea disabled="true" id="taKapacitivniOtpor">Xc = 0μF</textarea>
+            </th>
+            <th>
+                <!-- <img src="assets/induktivniOtpor.jpg" alt="Schema spoja otpornika" style="height: 250px;"> -->
+            </th>
+        </tr>
+    </table>
+
 
 <script src="index.js"></script>
 </body>

@@ -1,0 +1,16 @@
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+img{
+    margin-left: 60px;
+}
+button{
+    background-color:slategrey;
+    border-radius: 7px;
+    border: 2px solid black;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+}
