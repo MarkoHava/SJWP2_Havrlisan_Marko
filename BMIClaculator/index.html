@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: red;
+            margin: auto;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        h1{
+            font-weight: bolder;
+        }
+        button{
+            padding: 10px;
+            margin-top: 20px;
+            width: 100px;
+            background-color: black;
+            border-radius: 8px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <div>
+        <label> Height in cm: </label>
+        <input type="text" id="visina"> <br>
+        <label> Weight in KG: </label>
+        <input type="text" id="tezina">
+    </div>
+    <button>Calculate</button>
+    <h1 id="res">a</h1>
+    <script src="index.js"></script>
+</body>
+</html>
