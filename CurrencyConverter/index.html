@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: black;
+            margin: auto;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        h1{
+            font-weight: bolder;
+            color: white;
+        }
+        h3{
+            margin-top: 10px;
+            margin-left: 10px;
+            font-weight: bolder;
+            color: white;
+        }
+        p{
+            font-weight:lighter ;
+            color: gray;
+            margin-left: 10px;
+        }
+        div{
+            background-color: blue;
+            width: 300px;
+            height: 80px;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+        input{
+            width: 300px;
+            height: 25px;
+        }
+        button{
+            padding: 10px;
+            margin-top: 20px;
+            width: 50px;
+            background-color: white;
+            border-radius: 5px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <h3 style="margin-right: 270px;">Euro:</h3>
+    <input type="text" id="unos">
+    <button>Go</button>
+    <div>
+        <h3>Bit coin: </h3>
+        <p id="btc"> </p>
+    </div>
+    <div style="background-color: green;">
+        <h3>Dollar: </h3>
+        <p id="dlr"> </p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

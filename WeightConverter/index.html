@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: black;
+            margin: auto;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        h1{
+            font-weight: bolder;
+            color: white;
+        }
+        h3{
+            margin-top: 10px;
+            margin-left: 10px;
+            font-weight: bolder;
+            color: white;
+        }
+        p{
+            font-weight:lighter ;
+            color: gray;
+            margin-left: 10px;
+        }
+        div{
+            background-color: blue;
+            width: 300px;
+            height: 80px;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+        input{
+            width: 300px;
+            height: 25px;
+        }
+        button{
+            padding: 10px;
+            margin-top: 20px;
+            width: 50px;
+            background-color: white;
+            border-radius: 5px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weight Converter</h1>
+    <input type="text" id="unos">
+    <button>Go</button>
+    <div>
+        <h3>Pounds: </h3>
+        <p id="pounds"> </p>
+    </div>
+    <div style="background-color: green;">
+        <h3>Ounces: </h3>
+        <p id="ounces"> </p>
+    </div>
+    <div style="background-color: red;">
+        <h3>Grams: </h3>
+        <p id="grams"> </p>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
