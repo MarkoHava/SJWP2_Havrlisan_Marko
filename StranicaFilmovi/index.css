@@ -1,0 +1,38 @@
+body{
+    background-color: #262424;
+    color: blanchedalmond;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.topbar{
+    background-color: #454141;
+    margin-left: -8px; 
+    margin-top: -21px;
+    width: 100vw;
+    height: 70px;
+    padding-top: 6px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 75% 7% 7% 7%;
+}
+.btntype{
+}
+.grid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 10px;
+    row-gap: 20px;
+}
+.element{
+    padding: 10px;
+    border-radius: 30px;
+    width: 350px;
+    height: 650px;
+    border: 10px solid #454141;
+    text-align: center;
+}
+img{
+    height: 500px;
+    width: 350px;
+    border-radius: 30px;
+}
